@@ -3,6 +3,7 @@ import sqlite3
 import os
 from registration.registration import create_db, add_user, authenticate_user, display_users
 
+
 @pytest.fixture(scope="module")
 def setup_database():
     """Фикстура для настройки базы данных перед тестами и её очистки после."""
